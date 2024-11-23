@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heeader">
+  <header class="__header">
+      <div class="container small">
+        <div class="main__logo one"><a href="./idex.html">Exclusive</a></div>
+        <div onclick="dispalyMenu()" class="burger_icon" id="burger--icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="__nav">
+          <div class="main__logo two"><a href="./idex.html">Exclusive</a></div>
+          <!-- <div class="header__search"> -->
+            <!-- <span
+              ><a href="./produxts.html"><i class="ri-search-line"></i></a
+            ></span> -->
+            <!-- <span><input placeholder="search" type="search" /></span> -->
+          <!-- </div> -->
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#landing" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./produxts.html" class="nav__link">products</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contact.html" class="nav__link">Contact Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__icons">
+            <div id="beforeRegestration" class="beforeRegestration">
+              <a href="./signin.html"> Sign In</a>
+              <a href="./signup.html"> Sign Up</a>
+            </div>
+            <div id="afterregrstration" class="afterregrstration">
+              <a href="#"> <i class="ri-heart-3-line"></i></a>
+            <a href="#"  onclick="apperproducts()" ><i  class="ri-luggage-cart-line"></i> <span id="numberOfProducts">1</span></a>
+       <div id="productsmenu" class="productsmenu display">
+             <div class="products">
+              <div class="product">
+                <img src="./image/Iphone Image.png" alt="">
+                <p class="name">iphone</p>
+                <p class="price">$23</p>
+                <i class="ri-delete-bin-6-line delet" ></i>
+              </div>
+              <div class="product">
+                <img src="./image/Iphone Image.png" alt="">
+                <p class="name">iphone</p>
+                <p class="price">$23</p>
+                <i class="ri-delete-bin-6-line delet" onclick="remove()"></i>
+              </div>
+            </div>
+            <button class="showallprodusct"><a href="./produxts.html">Produscts</a></button>
+            </div>
+            <a href="#"> <i class="ri-user-line"></i></a>
+            <a href="#" onclick=" out()"><i class="ri-logout-box-r-line"></i></a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+        <!-- landig -->
+
+        <div class="landing">
+            <div class="container">
+                <div class="landing__main">
+
+                    <div class="info">
+                        <p>Pro.Beyond.</p>
+                        <p class="mainInfo">IPhone 14</p> <span>pro</span>
+                        <p>Created to change everything for the better. For everyone</p>
+                        <button onclick="gotoproducts()" class="landing__btn">Shop Now</button>
+                    </div>
+                    <div class="image__landing">
+                        <img src="./image/Iphone Image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- show  -->
+        <div class="show">
+            <div class="left">
+                <div class="ps5">
+
+                    <div class="image">
+                        <img src="./image/PlayStation.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h1>Playstation 5</h1>
+                        <p>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation
+                            experience.</p>
+
+                    </div>
+                </div>
+                <div class="bttom">
+                    <div class="airppds">
+                        <img src="./image/airpods.png" alt="">
+                        <div class="info">
+                            <h1>Apple
+                                AirPods Max</h1>
+                            <p>Computational audio. Listen, it's powerful</p>
+                        </div>
+                    </div>
+                    <div class="appclass">
+                        <img src="./image/appleclass.png" alt="">
+                        <div class="info">
+                            <h1>Apple Vision Pro</h1>
+                            <p>An immersive way to experience entertainment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mac">
+                <div class="info">
+                    <h1>Macbook</h1>
+                    <span>Air</span>
+
+                    <p>The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina
+                        display.</p>
+                    <button onclick="gotoproducts()" class="landing__btn show__btn">
+                        Shop Now
+                    </button>
+                </div>
+                <div class="">
+                    <img src="./image/mac.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!-- category  -->
+        <div class="categories">
+            <div class="container">
+
+                <h2>Browse By Category</h2>
+                <div class="cards">
+
+                    <div class="card">
+                        <i class="ri-smartphone-line"></i>
+                        <h3>Phones</h3>
+
+                    </div>
+                    <div class="card">
+                      <i class="ri-time-line"></i>
+                        <h3>Smart Watches</h3>
+
+                    </div>
+                    <div class="card">
+                       <i class="ri-camera-line"></i>
+                        <h3>Cameras</h3>
+
+                    </div>
+                    <div class="card">
+                       <i class="ri-customer-service-line"></i>
+                        <h3>Headphones</h3>
+
+                    </div>
+                    <div class="card">
+                     <i class="ri-computer-line"></i>
+                        <h3>Computers</h3>
+
+                    </div>
+                    <div class="card">
+                       <i class="ri-gamepad-line"></i>
+                        <h3>Gaming</h3>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+<!-- productcards  -->
+ <div class="some__products">
+<div class="container">
+    <div class="productcards">
+         <div class="pro__card">
+                    <i class="ri-heart-3-line"></i>
+                    <img
+                      src="./image/prodcts img/Galaxy Z Fold5 Unlocked.png"
+                      alt=""
+                    />
+                    <h3>Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h3>
+                    <h2>$1799</h2>
+                    <div class="car__ntns">
+                      <button onclick="gotoproducts()"class="cadr__bnt">Buy Now</button>
+                      <i class="ri-shopping-cart-2-line"></i>
+                    </div>
+      </div>
+    </div>
+
+
+</div>
+</div>
+
+<div class="imp__prod">
+    <div class="imp__card">
+        <img src="./image/prodcts img/Samsung Galaxy .png" alt="">
+        <h3>Samsung Galaxy </h3>
+        <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+
+<button onclick="gotoproducts()" class="imp__btn">
+    Shop Now
+</button>
+    </div>
+    <div class="imp__card">
+        <img src="./image/prodcts img/Samsung Galaxy .png" alt="">
+        <h3>Samsung Galaxy </h3>
+        <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+
+<button onclick="gotoproducts()" class="imp__btn">
+    Shop Now
+</button>
+    </div>
+    <div class="imp__card">
+        <img src="./image/prodcts img/Samsung Galaxy .png" alt="">
+        <h3>Samsung Galaxy </h3>
+        <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+
+<button onclick="gotoproducts()" class="imp__btn">
+    Shop Now
+</button>
+    </div>
+    <div class="imp__card">
+        <img src="./image/prodcts img/Samsung Galaxy .png" alt="">
+        <h3>Samsung Galaxy </h3>
+        <p>iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+
+<button onclick="gotoproducts()" class="imp__btn">
+    Shop Now
+</button>
+    </div>
+</div> 
+<div class="baner">
+<h3>Big Summer Sale</h3>
+<p>Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+
+<button onclick="gotoproducts()" class="landing__btn">Shop Now</button>
+
+
+</div>
+<footer>
+<div class="container">
+  <div class="footerinfo">
+      <div class="exclusive">
+
+    <h1>Exclusive</h1>
+    <p>Get 10% off your first order</p>
+<div class="icons">
+    <i class="ri-facebook-circle-line"></i>
+    <i class="ri-twitter-x-fill"></i>
+    <i class="ri-instagram-line"></i>
+    <i class="ri-linkedin-box-line"></i>
+</div>
+</div>
+<div class="support">
+
+<h2>Support</h2>
+<p>exclusive@gmail.com</p>
+<p>+88015-88888-9999</p>
+
+</div>
+<div class="account">
+<h2>Account</h2>
+<p>My Account</p>
+<p>Login / Register</p>
+<p>Cart</p>
+<p>Wishlist</p>
+<p>Shop</p>
+
+
+</div>
+<div class="quickLink">
+<h2>Quick Link</h2>
+<p>Privacy Policy</p>
+<p>Terms Of Use</p>
+<p>FAQ</p>
+<p>Contact</p>
+
+
+
+</div>
+  </div>
+
+</div>
+
+
+</footer>
+        <script src="./js/script.js"></script>
+</body>
+
+</html>

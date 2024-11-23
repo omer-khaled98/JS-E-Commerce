@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* <!--=============== VARIBLES CSS ===============--> */
+:root {
+  --header-height: 5.5rem;
+  /* <!--=============== COLORS ===============--> */
+  /* COLOR MODE HSL */
+  --main-color: #db4444;
+  --landing-color: #211c24;
+  --cards-color: #ededed;
+  --hover-color: #353535;
+  --text-color: hsl(0, 0%, 0%);
+
+  /* <!--=============== Font and typography ===============--> */
+  /*   0.5= 8px || 1rem=16px */
+  --body-font: "Inter", sans-serif;
+  --biggest-font-size: 10rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  /* <!--=============== Font Weight ===============-->*/
+
+  /* --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600; */
+  /* <!--=============== Z index ===============-->*/
+  /* --z-tooltip: 10;
+  --z-fixed: 100; */
+}
+
+/* <!--=============== responsivee typography ===============-->*/
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 25rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+/* <!--=============== BASE ===============-->*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-weight: 100;
+  font-size: 96px;
+}
+
+.__header {
+  top: 0;
+  left: 0;
+  /* margin-top: 0; */
+  width: 100%;
+  height: 72px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 3px 5px #dfdfdf;
+  background-color: #fafafa;
+  z-index: 100000;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.__nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  justify-content: space-between;
+}
+.main__logo a {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+}
+.one {
+  display: none;
+}
+.burger_icon {
+  display: none;
+}
+.header__search {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+
+  background-color: var(--cards-color);
+  height: 40px;
+  border-radius: 5px;
+}
+
+.header__search i {
+  color: rgb(158, 158, 158);
+}
+.header__search input {
+  width: 170px;
+  padding-left: 5px;
+  font-size: 18px;
+  height: 100%;
+  background-color: var(--cards-color);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.nav__menu ul {
+  display: flex;
+}
+
+.nav__menu ul li a {
+  padding: 20px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--landing-color);
+  transition: all 0.3s;
+  /* font-weight: bold; */
+
+  border-top: 5px solid transparent;
+}
+.nav__menu ul li a:hover {
+  color: var(--main-color);
+  border-top: 5px solid var(--main-color);
+}
+.header__icons i {
+  margin: 0 5px;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+.header__icons i:hover {
+  color: var(--main-color);
+}
+.header__icons {
+  position: relative;
+  display: flex;
+}
+.header__icons a {
+  margin: 0 10px;
+  color: #211c24;
+  /* font-size: 10px; */
+  z-index: 10000;
+}
+.header__icons span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(241, 80, 80);
+  border-radius: 50%;
+
+  position: absolute;
+  top: -10px;
+  left: 50%;
+
+  text-align: center;
+}
+.header__icons .productsmenu {
+  position: absolute;
+  background-color: #eaeaea;
+  width: 200px;
+  padding: 20px;
+  left: -50px;
+  border-radius: 9px;
+  top: 40px;
+}
+.header__icons .productsmenu .showallprodusct {
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+}
+.productsmenu .product {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #787878;
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+.header__icons .productsmenu img {
+  width: 20px;
+  height: 20px;
+}
+#i {
+  color: #211c24;
+}

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* <!--=============== VARIBLES CSS ===============--> */
+:root {
+  --header-height: 5.5rem;
+  /* <!--=============== COLORS ===============--> */
+  /* COLOR MODE HSL */
+  --main-color: #db4444;
+  --landing-color: #211c24;
+  --cards-color: #ededed;
+  --hover-color: #353535;
+  --text-color: hsl(0, 0%, 0%);
+
+  /* <!--=============== Font and typography ===============--> */
+  /*   0.5= 8px || 1rem=16px */
+  --body-font: "Inter", sans-serif;
+  --biggest-font-size: 10rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  /* <!--=============== Font Weight ===============-->*/
+
+  /* --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600; */
+  /* <!--=============== Z index ===============-->*/
+  /* --z-tooltip: 10;
+  --z-fixed: 100; */
+}
+
+/* <!--=============== responsivee typography ===============-->*/
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 25rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+/* <!--=============== BASE ===============-->*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* color: black; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color);
+  /* font-weight: var(--font-semi-bold); */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-weight: 100;
+  font-size: 96px;
+}
+/* <!--=============== Header ===============-->*/
+img {
+  width: 120px;
+  /* height: 100px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 970px) {
+  .container {
+    width: 95%;
+  }
+}
+.__header {
+  /* background-color: red; */
+  position: fixed;
+  top: 0;
+}
+#om {
+  margin-top: 100px;
+}
+.main input[type="search"] {
+  /* margin-top: 150px; */
+  color: red;
+  border: none;
+  border-bottom: 2px solid #909090;
+  outline: none;
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 5px;
+}
+.main input[type="search"]:focus {
+  border-bottom: 2px solid #db4444;
+}
+.store {
+  /* border: 2px solid red; */
+  height: 100vh;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+.search .btnsfilter {
+  /* border: 2px solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btncat {
+  margin: 0 10px;
+  width: 100px;
+  height: 48px;
+  background-color: #211c24;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.btnsfilter .btncat:hover {
+  border: 1px solid transparent;
+  background-color: #db4444;
+  /* color: black; */
+  transition: all 0.3s;
+}
+.store .pro__card {
+  width: 200px;
+  height: 400px;
+  background-color: #f6f6f6;
+  display: flex;
+
+  flex-direction: column;
+
+  text-align: center;
+  justify-content: space-around;
+  border-radius: 9px;
+  margin: 16px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px #909090;
+  transition: all 0.3s;
+}
+.pro__card:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #db4444;
+}
+.cadr__bnt {
+  width: 150px;
+  height: 48px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.cadr__bnt:hover {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  transition: all 0.3s;
+}
+.car__ntns i {
+  font-size: 30px;
+  /* padding-top: 20px; */
+  margin-top: 20px;
+  /* margin-left: 20px; */
+  cursor: pointer;
+  right: 20px;
+  color: var(--main-color);
+}
+.pro__card h3 {
+  font-weight: 500;
+}
+.filter {
+  display: flex;
+  grid-template-columns: 200px 1fr;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.filter .price {
+  /* border: 2px solid black; */
+  padding-top: 100px;
+}
+/* .divshow .filter {
+
+} */

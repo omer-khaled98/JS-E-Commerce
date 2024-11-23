@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product Page</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style/headerand footer.css" />
+    <link rel="stylesheet" href="./style/productdetails.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header class="__header">
+      <div class="container small">
+        <div class="main__logo one"><a href="./idex.html">Exclusive</a></div>
+        <div onclick="dispalyMenu()" class="burger_icon" id="burger--icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="__nav">
+          <div class="main__logo two"><a href="">Exclusive</a></div>
+          <!-- <div class="header__search">
+            <span
+              ><a href="./produxts.html"><i class="ri-search-line"></i></a
+            ></span>
+            <span><input placeholder="search" type="search" /></span>
+          </div> -->
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#landing" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="./produxts.html" class="nav__link">products</a>
+              </li>
+              <li class="nav__item">
+                <a href="./contact.html" class="nav__link">Contact Us</a>
+              </li>
+              <li class="nav__item">
+                <a href="./about.html" class="nav__link">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__icons">
+            <div id="beforeRegestration" class="beforeRegestration">
+              <a href="./signin.html"> Sign In</a>
+              <a href="./signup.html"> Sign Up</a>
+            </div>
+            <div id="afterregrstration" class="afterregrstration">
+              <a href="#"> <i id="i" class="ri-heart-3-line"></i></a>
+              <a href="#" onclick="apperproducts()"
+                ><i class="ri-luggage-cart-line"></i>
+                <span id="numberOfProducts">1</span></a
+              >
+              <div id="productsmenu" class="productsmenu display">
+                <div class="products">
+                  <div class="product">
+                    <img src="./image/Iphone Image.png" alt="" />
+                    <p class="name">iphone</p>
+                    <p class="price">$23</p>
+                    <i class="ri-delete-bin-6-line delet"></i>
+                  </div>
+                  <div class="product">
+                    <img src="./image/Iphone Image.png" alt="" />
+                    <p class="name">iphone</p>
+                    <p class="price">$23</p>
+                    <i
+                      class="ri-delete-bin-6-line delet"
+                      onclick="remove()"
+                    ></i>
+                  </div>
+                </div>
+                <button class="showallprodusct">
+                  <a href="./produxts.html">Produscts</a>
+                </button>
+              </div>
+              <a href="#"> <i class="ri-user-line"></i></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="pagination">
+      <p>Home > Shop</p>
+    </div>
+    <!-- product section -->
+    <section id="product-container" class="product-container">
+      <!-- left side -->
+    </section>
+
+    <!-- script tags -->
+    <!-- <script src="./js/products.js"></script> -->
+    <script src="./js/script.js"></script>
+    <script src="./js/prodetails.js"></script>
+  </body>
+</html>
